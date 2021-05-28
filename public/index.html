@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plane model</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/app.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e11d8ff99.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper blue-grey darken-3">
+          <span class="brand-logo center">3d Aircraft Test</span>
+        </div>
+    </nav>
+    </header>
+    <section id="first">
+          <div class="card">
+            <div class="card-image">
+              <div id="canvas-container"></div>
+              <span class="card-title" style="color: #37474f;">Aircraft Model</span>
+              <button id="reset-position" class="btn-floating halfway-fab waves-effect waves-light red" title="Click to reset aircraft position."><i class="fas fa-undo"></i></button>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li><strong>Model:</strong> A320 (probably not)</li>
+                <li><strong>Age:</strong> 3y</li>
+                <li><strong>Flight Hours:</strong> 4000</li>
+              </ul>
+
+              <hr/>
+              <p><strong>Note:</strong></p>
+              <p>Use your cursor (or fingers) to manipulate the model. Reset the model's position with the reset button.</p>
+              <p>This is a quick demo that only scratches the surface... you could include much more information / interactivity with the 3d model.</p>
+              <br/>
+              <p>You can inspect the app.js file to see how I am rendering the model.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <script src="js/three.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
